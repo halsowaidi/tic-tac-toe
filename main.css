@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-color: black;
+    font-size: 80px;
+}
+
+.title {
+    font-size:40px;
+    align-items: center;
+    color: aqua;
+    text-align:center;
+}
+.gameContainer{
+    display:flex;
+    flex-wrap: wrap;
+    width: 330px;
+    margin: auto;
+    cursor: pointer;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 2px;
+    float: right;
+}
