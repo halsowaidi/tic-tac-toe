@@ -42,7 +42,7 @@ function init (){
        if (count === 3) {
         console.log('Player 2 wins!')
         isWinningConditionMet = true
-        showMessage.textContent = 'player 2 wins!'
+        showMessage.textContent = 'player 2 wins ✌🏻😁'
         
     }
     count = 0
@@ -52,10 +52,12 @@ function init (){
     if (count === 3) {
         console.log('Player 1 wins!')
         isWinningConditionMet = true
-        showMessage.textContent = 'player 1 wins!'
+        showMessage.textContent = 'player 1 wins ✌🏻😁'
     }
     if (player1List.length + player2List.length === 9 && isWinningConditionMet === false){
-        console.log('drw!')
+        console.log('TIE!')
+        showMessage.textContent = 'TIE 😕'
+
      }
  })
  if (isWinningConditionMet) {
@@ -75,6 +77,7 @@ function init (){
 
         cell.textContent = " "
         cell.style.pointerEvents = 'auto'
+        showMessage.textContent = ' '
         cell.addEventListener('click', playTurn)
     })   
     }
